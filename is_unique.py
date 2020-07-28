@@ -4,6 +4,22 @@ Created on Tue Jul 28 11:14:13 2020
 
 @author: Saffa Fatima
 """
+#--------------------------------------------#
+
+'''
+Given a string, Determine if the string has all unique characters.
+
+Examples :
+
+Input : abcd10jk
+Output : true
+
+Input : hutg9mnd!nk9
+Output : false
+
+'''
+
+
 
 ## 1. Brute force solution with two loops ##
 
