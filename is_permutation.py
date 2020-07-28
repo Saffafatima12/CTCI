@@ -8,7 +8,7 @@ Created on Tue Jul 28 13:20:38 2020
 #-------------------------------#
 
 '''
-Write a function to check whether two given strings are Permutation of each other or not.
+Write a function to check whether two given strings are permutation of each other.
 '''
 
 
