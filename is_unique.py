@@ -4,7 +4,6 @@ Created on Tue Jul 28 11:14:13 2020
 
 @author: Saffa Fatima
 """
-#--------------------------------------------#
 
 '''
 Given a string, Determine if the string has all unique characters.
@@ -18,6 +17,8 @@ Input : hutg9mnd!nk9
 Output : false
 
 '''
+
+
 
 
 
@@ -42,9 +43,10 @@ def is_unique1(string):
 # is_unique('sad') >> True
 
 ## Time complexity ##
-
 #O(n^2)
 
+## Space complexity ##
+# O(1) because you don't really need to copy/store the string anywhere 
 # =============================================================================
   
 ## 2. Sorting algorithm ##
@@ -59,7 +61,11 @@ def is_unique2(string):
     return True
     
 # =============================================================================
-# Time complexity is O(nlogn) for the sorting algorithm used in Python's sorted() function
+# ## Time complexity ##
+# O(nlogn) for the sorting algorithm used in Python's sorted() function -- Timsort
+
+## Space complexity ##
+# Larger than O(1) because we now because Timsort takes up extra space while sorting. likely O(n)?
 # =============================================================================
 
 
@@ -91,5 +97,9 @@ def is_unique3(string):
             
                 
    # =============================================================================
-# Time complexity is O(n) as the no. of operations required increase in direct proportion to length of the input string 
+# ## Time complexity ##
+# is O(n) as the no. of operations required increase in direct proportion to length of the input string
+
+## Space complexity ##
+# O(1) because check_array is the same for every string
 # =============================================================================             
